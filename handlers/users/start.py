@@ -2,6 +2,7 @@ from aiogram import types
 from aiogram.dispatcher.filters.builtin import CommandStart
 from keyboards.default.main_keyboards import start
 from loader import dp
+from states.user_control_state import ChooseOption
 
 @dp.message_handler(commands='start', state=ChooseOption)
 @dp.message_handler(CommandStart())
