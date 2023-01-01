@@ -32,7 +32,7 @@ async def set_language(call:CallbackQuery):
     elif call_matni == "ar_uz":
         await call.message.answer("🇺🇿 O'zbek yoki 🇸🇦 Arab tilida matn yuboring", reply_markup=glavniga)
         await ChooseOption.til4.set()
-    elif call_matni == "tr_en":
+    elif call_matni == "tr_uz":
         await call.message.answer("🇹🇷 Turk yoki 🇺🇿 O'zbek tilida matn yuboring", reply_markup=glavniga)    
         await ChooseOption.til5.set()
     elif call_matni == "ko_uz":
